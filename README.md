@@ -12,8 +12,8 @@ All material is made available under [Creative Commons BY-NC-SA 4.0](https://cre
 ## INSTALL
 
 Dependencies:
-    - [pytorch>=1.2](https://pytorch.org/)
-    - [CUDA 10](https://developer.nvidia.com/cuda-zone)
+- [pytorch>=1.2](https://pytorch.org/)
+- [CUDA 10](https://developer.nvidia.com/cuda-zone)
 
 ``` python setup.py install ```
 
@@ -21,6 +21,6 @@ Dependencies:
 
 See [eaxmple](./example/README.md) for learning how to use.
 
-<b>torch must be imported before importing pcpr!</b>
+torch must be imported before importing pcpr!
 
 ![png](example/output_9_1.png)
