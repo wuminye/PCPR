@@ -1,4 +1,4 @@
-# Point Cloud Projection and Render (PCPR)
+# Point Cloud Projection and Rendering (PCPR)
 
 This project uses CUDA to do the differentiable projection and rasterization for point cloud.
 
