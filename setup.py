@@ -8,7 +8,7 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
 setup(
     name='pcpr',
-    version="0.1",
+    version="0.2",
     ext_modules=[
         CUDAExtension('pcpr', [
             'CloudProjection/pcpr_cuda.cpp',

@@ -242,12 +242,20 @@ void DepthProject(float3 * point_clouds, int num_points,
 	
 
 	float radius = max_splatting_size * rate;
-	
+
+
+	int xstart = round(camp.x - radius );
+	int ystart = round(camp.y - radius );
+	int xend = round(camp.x + radius );
+	int yend = round(camp.y + radius );
+
+	if (xstart<0 || ystart<0 || xend<0 || yend<0)
+		return;
 
 	// splatting
-	for (int xx = round(camp.x - radius ); xx <= round(camp.x + radius ); ++xx)
+	for (int xx = xstart; xx <= xend; ++xx)
 	{
-		for (int yy = round(camp.y - radius ); yy <= round(camp.y + radius ); ++yy)
+		for (int yy = ystart; yy <= yend; ++yy)
 		{
 			if (xx < 0 || xx >= tar_width || yy < 0 || yy >= tar_height)
 				return;
