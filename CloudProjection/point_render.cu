@@ -205,7 +205,7 @@ void DepthProject(float3 * point_clouds, int num_points,
 	int ids = blockDim.x * blockIdx.x + threadIdx.x; //  index of point
 
 
-	if (ids > num_points) 
+	if (ids >= num_points) 
 		return;
 
 
